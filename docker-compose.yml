@@ -1,0 +1,110 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:?Set MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER:?Set MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD}
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 25
+    networks: [internal]
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "noeviction"]
+    volumes: [redis_data:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 10
+    networks: [internal]
+  minio:
+    image: cgr.dev/chainguard/minio@sha256:dc455cdd4db6e390b1b26514f15ff37681a777bf8dab41aac445a0259f751e56
+    restart: unless-stopped
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:?Set S3_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:?Set S3_SECRET_KEY}
+    volumes: [minio_data:/data]
+    networks: [internal]
+  clamav:
+    image: clamav/clamav:1.4
+    profiles: [security]
+    restart: unless-stopped
+    volumes: [clamav_data:/var/lib/clamav]
+    networks: [internal]
+  api:
+    build: ./services/api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?Set DATABASE_URL}
+    depends_on:
+      mysql: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      minio: {condition: service_started}
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    networks: [internal]
+  worker:
+    build: ./services/api
+    restart: unless-stopped
+    env_file: .env
+    depends_on:
+      mysql: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      minio: {condition: service_started}
+    command: ["celery", "-A", "app.workers.celery_app:celery_app", "worker", "--loglevel=WARNING", "--concurrency=2", "--max-tasks-per-child=40"]
+    networks: [internal]
+  qdrant:
+    image: qdrant/qdrant:v1.15.5
+    profiles: [semantic]
+    restart: unless-stopped
+    volumes: [qdrant_data:/qdrant/storage]
+    networks: [internal]
+  ml-service:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile.ml
+    profiles: [semantic]
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+    depends_on: [qdrant]
+    volumes: [ml_models:/models/cache]
+    networks: [internal]
+  vector-worker:
+    build: ./services/api
+    profiles: [semantic]
+    restart: unless-stopped
+    env_file: .env
+    depends_on: [ml-service, mysql, redis]
+    command: ["celery", "-A", "app.workers.celery_app:celery_app", "worker", "-Q", "vectors", "--loglevel=WARNING", "--concurrency=1"]
+    networks: [internal]
+  web:
+    build: ./apps/web
+    restart: unless-stopped
+    ports: ["127.0.0.1:8080:80"]
+    depends_on:
+      api: {condition: service_healthy}
+    networks: [internal]
+volumes:
+  mysql_data:
+  redis_data:
+  minio_data:
+  clamav_data:
+  qdrant_data:
+  ml_models:
+networks:
+  internal:

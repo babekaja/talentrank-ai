@@ -1,0 +1,9 @@
+{
+  "sentence_transformers_installed": false,
+  "local_model_directory_valid": false,
+  "pretrained_neural_inference_executed": false,
+  "evaluation_on_independent_human_labels": false,
+  "deployment_enabled": false,
+  "ready_for_real_model_benchmark": false,
+  "blocker": "SENTENCE_TRANSFORMERS_NOT_INSTALLED"
+}

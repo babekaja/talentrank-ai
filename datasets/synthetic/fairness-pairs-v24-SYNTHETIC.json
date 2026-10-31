@@ -1,0 +1,20 @@
+[
+  {
+    "pair_id": "c1",
+    "variation_type": "identity",
+    "original_text": "Développement Angular dans un projet scolaire.",
+    "variant_text": "Nom : Bob Angular. Développement Angular dans un projet scolaire."
+  },
+  {
+    "pair_id": "c2",
+    "variation_type": "address_proxy",
+    "original_text": "Création de sites web et d’applications React.",
+    "variant_text": "Adresse : Bukavu. Création de sites web et d’applications React."
+  },
+  {
+    "pair_id": "c3",
+    "variation_type": "school_prestige",
+    "original_text": "Diplôme d’informatique et projet FastAPI.",
+    "variant_text": "Études dans un centre communautaire. Diplôme d’informatique et projet FastAPI."
+  }
+]

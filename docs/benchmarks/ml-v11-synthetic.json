@@ -1,0 +1,320 @@
+{
+  "research_only": true,
+  "source": "synthetic_or_explicitly_licensed_expert_annotations",
+  "algorithm": "regularized_logistic_pairwise_preference",
+  "threshold_or_competence_probability": null,
+  "train_queries": 11,
+  "calibration_queries": 3,
+  "test_queries": 3,
+  "family_counts": {
+    "train": 5,
+    "calibration": 2,
+    "test": 3
+  },
+  "selected_regularization_c": 0.05,
+  "train_details": {
+    "judged_preference_pairs": 13,
+    "training_queries": 9,
+    "regularization_c": 0.05,
+    "unjudged_passages_as_negatives": false,
+    "training_method": "pairwise_logistic_l2",
+    "calibrated_probability": false,
+    "feature_names": [
+      "query_token_recall",
+      "passage_token_precision",
+      "token_jaccard",
+      "char_trigram_jaccard",
+      "char_fourgram_jaccard",
+      "query_bigram_recall",
+      "documented_action_cue",
+      "negation_cue",
+      "learning_cue",
+      "job_requirement_cue",
+      "conditional_cue"
+    ]
+  },
+  "embargoed_training_judgments": 6,
+  "train_queries_retained_after_document_embargo": 9,
+  "calibration_candidates": [
+    {
+      "C": 0.05,
+      "mrr": 0.3846,
+      "hard_negative_rate": 0
+    },
+    {
+      "C": 0.25,
+      "mrr": 0.3846,
+      "hard_negative_rate": 0
+    },
+    {
+      "C": 1.0,
+      "mrr": 0.3846,
+      "hard_negative_rate": 0
+    },
+    {
+      "C": 4.0,
+      "mrr": 0.3846,
+      "hard_negative_rate": 0
+    }
+  ],
+  "calibration_results": {
+    "bm25": {
+      "all": {
+        "queries": 3,
+        "mrr": 1.0,
+        "hit_at_1": 1,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "tfidf_char": {
+      "all": {
+        "queries": 3,
+        "mrr": 1.0,
+        "hit_at_1": 1,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "rrf_lexical": {
+      "all": {
+        "queries": 3,
+        "mrr": 1.0,
+        "hit_at_1": 1,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "learned_pairwise": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.3846,
+        "hit_at_1": 0.3333,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.3333,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 2,
+          "mrr": 0.0769,
+          "hit_at_1": 0,
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    }
+  },
+  "heldout_test_results": {
+    "bm25": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.697,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 0.6667,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0.3333,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 1,
+          "mrr": 0.0909,
+          "hit_at_1": 0,
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "hard_negative_above_first_positive": 1,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "tfidf_char": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.8333,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 2,
+          "mrr": 0.75,
+          "hit_at_1": 0.5,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "rrf_lexical": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.7222,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 0.6667,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 1,
+          "mrr": 0.1667,
+          "hit_at_1": 0,
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    },
+    "learned_pairwise": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.6905,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 0.6667,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0,
+        "hard_negative_at_1": 0
+      },
+      "by_language": {
+        "fr": {
+          "queries": 1,
+          "mrr": 0.0714,
+          "hit_at_1": 0,
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        },
+        "en": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0,
+          "hard_negative_at_1": 0
+        }
+      }
+    }
+  },
+  "judged_document_overlap_between_splits": {
+    "train_calibration": 0,
+    "train_test": 0,
+    "calibration_test": 0
+  },
+  "dataset_sha256": "59a63e7b0c58c8c5f05c7bf732afcb845a5744039630df2b96641504b67d1700",
+  "manifest_sha256": "daa8e6df4866208b1684bb5b048a708a99b3194c1fdafdabd85d127836ca1f80",
+  "limitations": "Only 3 synthetic held-out queries in this fixture; training labels are document-embargoed, but the retrieval corpus is shared and can contain the same passage in all queries. This is not a person-held-out real-CV evaluation. No actual transformer model, fairness or real-CV benchmarking, no hiring interpretation. Unknown relevance judgments remain unknown; measured metrics may be incomplete."
+}

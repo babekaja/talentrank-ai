@@ -1,0 +1,162 @@
+[
+  {
+    "name": "analytics-dashboard",
+    "route_or_module": "dashboard",
+    "placement": "États vides des indicateurs",
+    "status": "active",
+    "small": "/assets/talentrank/analytics-dashboard-480.webp",
+    "large": "/assets/talentrank/analytics-dashboard-960.webp"
+  },
+  {
+    "name": "candidate-comparison",
+    "route_or_module": "matching/compare",
+    "placement": "Aide compacte à la comparaison",
+    "status": "active",
+    "small": "/assets/talentrank/candidate-comparison-480.webp",
+    "large": "/assets/talentrank/candidate-comparison-960.webp"
+  },
+  {
+    "name": "candidate-decision",
+    "route_or_module": "future-recruitment-decisions",
+    "placement": "Réservée : ne pas représenter des rejets automatiques",
+    "status": "reserved",
+    "small": "/assets/talentrank/candidate-decision-480.webp",
+    "large": "/assets/talentrank/candidate-decision-960.webp"
+  },
+  {
+    "name": "candidate-onboarding",
+    "route_or_module": "candidates",
+    "placement": "Répertoire vide",
+    "status": "active",
+    "small": "/assets/talentrank/candidate-onboarding-480.webp",
+    "large": "/assets/talentrank/candidate-onboarding-960.webp"
+  },
+  {
+    "name": "candidate-ranking",
+    "route_or_module": "matching future explanation",
+    "placement": "Réservée : chiffres de classement stylisés pouvant suggérer un vainqueur",
+    "status": "reserved",
+    "small": "/assets/talentrank/candidate-ranking-480.webp",
+    "large": "/assets/talentrank/candidate-ranking-960.webp"
+  },
+  {
+    "name": "cv-import",
+    "route_or_module": "uploads",
+    "placement": "Aide à l’importation",
+    "status": "active",
+    "small": "/assets/talentrank/cv-import-480.webp",
+    "large": "/assets/talentrank/cv-import-960.webp"
+  },
+  {
+    "name": "explainable-review",
+    "route_or_module": "matching-detail",
+    "placement": "Aide à la lecture des preuves",
+    "status": "active",
+    "small": "/assets/talentrank/explainable-review-480.webp",
+    "large": "/assets/talentrank/explainable-review-960.webp"
+  },
+  {
+    "name": "fair-hiring",
+    "route_or_module": "future-fairness-explainer",
+    "placement": "Réservée : un visuel ne constitue pas une certification d’équité",
+    "status": "reserved",
+    "small": "/assets/talentrank/fair-hiring-480.webp",
+    "large": "/assets/talentrank/fair-hiring-960.webp"
+  },
+  {
+    "name": "interview-scheduling",
+    "route_or_module": "future-interviews",
+    "placement": "Réservée : aucune planification d’entretiens opérationnelle",
+    "status": "reserved",
+    "small": "/assets/talentrank/interview-scheduling-480.webp",
+    "large": "/assets/talentrank/interview-scheduling-960.webp"
+  },
+  {
+    "name": "job-description",
+    "route_or_module": "jobs",
+    "placement": "Aide à la définition des besoins",
+    "status": "active",
+    "small": "/assets/talentrank/job-description-480.webp",
+    "large": "/assets/talentrank/job-description-960.webp"
+  },
+  {
+    "name": "matching-intelligent",
+    "route_or_module": "matching",
+    "placement": "Repère avant lancement d’une analyse",
+    "status": "active",
+    "small": "/assets/talentrank/matching-intelligent-480.webp",
+    "large": "/assets/talentrank/matching-intelligent-960.webp"
+  },
+  {
+    "name": "multilingual-analysis",
+    "route_or_module": "ml-lab",
+    "placement": "Illustration du laboratoire expérimental",
+    "status": "active",
+    "small": "/assets/talentrank/multilingual-analysis-480.webp",
+    "large": "/assets/talentrank/multilingual-analysis-960.webp"
+  },
+  {
+    "name": "notifications",
+    "route_or_module": "future-notification-center",
+    "placement": "Réservée : pas de centre de notifications opérationnel",
+    "status": "reserved",
+    "small": "/assets/talentrank/notifications-480.webp",
+    "large": "/assets/talentrank/notifications-960.webp"
+  },
+  {
+    "name": "recruitment-pipeline",
+    "route_or_module": "campaigns",
+    "placement": "Repère sur le cycle de campagne",
+    "status": "active",
+    "small": "/assets/talentrank/recruitment-pipeline-480.webp",
+    "large": "/assets/talentrank/recruitment-pipeline-960.webp"
+  },
+  {
+    "name": "reports-export",
+    "route_or_module": "reports",
+    "placement": "Repère de la page de rapports",
+    "status": "active",
+    "small": "/assets/talentrank/reports-export-480.webp",
+    "large": "/assets/talentrank/reports-export-960.webp"
+  },
+  {
+    "name": "secure-documents",
+    "route_or_module": "privacy / document-viewer",
+    "placement": "Confidentialité et aperçu privé",
+    "status": "active",
+    "small": "/assets/talentrank/secure-documents-480.webp",
+    "large": "/assets/talentrank/secure-documents-960.webp"
+  },
+  {
+    "name": "skills-extraction",
+    "route_or_module": "skills",
+    "placement": "Référentiel de compétences vide",
+    "status": "active",
+    "small": "/assets/talentrank/skills-extraction-480.webp",
+    "large": "/assets/talentrank/skills-extraction-960.webp"
+  },
+  {
+    "name": "system-health",
+    "route_or_module": "future-admin-monitoring",
+    "placement": "Réservée : pas de tableau de santé infrastructure en temps réel",
+    "status": "reserved",
+    "small": "/assets/talentrank/system-health-480.webp",
+    "large": "/assets/talentrank/system-health-960.webp"
+  },
+  {
+    "name": "talent-search",
+    "route_or_module": "login",
+    "placement": "Visuel d’accueil",
+    "status": "active",
+    "small": "/assets/talentrank/talent-search-480.webp",
+    "large": "/assets/talentrank/talent-search-960.webp"
+  },
+  {
+    "name": "team-collaboration",
+    "route_or_module": "team",
+    "placement": "Repère de l’espace équipe",
+    "status": "active",
+    "small": "/assets/talentrank/team-collaboration-480.webp",
+    "large": "/assets/talentrank/team-collaboration-960.webp"
+  }
+]

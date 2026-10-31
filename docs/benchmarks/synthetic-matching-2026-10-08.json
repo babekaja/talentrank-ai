@@ -1,0 +1,34 @@
+{
+  "kind": "synthetic_matching_only",
+  "disclaimer": "Not document ingestion, OCR, embeddings, Qdrant or MySQL throughput.",
+  "results": [
+    {
+      "items": 100,
+      "success": 100,
+      "seconds": 0.0279,
+      "per_second": 3590.3,
+      "peak_tracemalloc_bytes": 8243
+    },
+    {
+      "items": 500,
+      "success": 500,
+      "seconds": 0.1443,
+      "per_second": 3464.2,
+      "peak_tracemalloc_bytes": 7404
+    },
+    {
+      "items": 1000,
+      "success": 1000,
+      "seconds": 0.2904,
+      "per_second": 3443.7,
+      "peak_tracemalloc_bytes": 7404
+    },
+    {
+      "items": 3000,
+      "success": 3000,
+      "seconds": 0.8428,
+      "per_second": 3559.5,
+      "peak_tracemalloc_bytes": 7432
+    }
+  ]
+}

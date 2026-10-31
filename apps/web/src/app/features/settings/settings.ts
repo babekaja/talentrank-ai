@@ -1,0 +1,26 @@
+import { TrIcon } from '../../shared/ui/tr-icon';
+import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { AuthService } from '../../core/auth/auth.service';
+import { PreferencesService, ThemeMode } from '../../core/ui/preferences.service';
+@Component({selector:'tr-settings',standalone:true,imports:[TrIcon,RouterLink],template:`
+<header class="page-intro"><div><p class="eyebrow"><tr-icon name="settings" [size]="15"/> Mon compte et préférences</p><h1>Un espace à votre manière</h1><p>Retrouvez vos informations d'accès et adaptez le confort de lecture. Aucune préférence d'affichage ne modifie le traitement ou le classement d'un candidat.</p></div></header>
+<div class="grid gap-5 xl:grid-cols-2"><section class="card p-6 sm:p-7"><div class="flex items-center gap-4"><div class="grid h-14 w-14 place-items-center rounded-2xl bg-[#e7eff6] font-bold text-[#244f86] text-xl ring-2 ring-[#a5c7d2]/50 dark:bg-[#2c465d] dark:text-blue-100 dark:ring-[#3d6575]">{{initials()}}</div><div><p class="eyebrow">Session actuelle</p><h2 class="section-heading mt-1">{{auth.user()?.full_name||'Votre compte'}}</h2><p class="section-caption">{{roleLabel(auth.user()?.role)}}</p></div></div>
+<dl class="mt-6 divide-y divide-slate-100 dark:divide-slate-700 text-sm"><div class="flex flex-wrap justify-between gap-3 py-3.5"><dt class="muted">Adresse email</dt><dd class="font-semibold break-all">{{auth.user()?.email||'Non renseigné'}}</dd></div><div class="flex flex-wrap justify-between gap-3 py-3.5"><dt class="muted">Entreprise</dt><dd class="font-semibold">{{auth.user()?.organization_name||'Non renseigné'}}</dd></div><div class="flex flex-wrap justify-between gap-3 py-3.5"><dt class="muted">Identifiant d'organisation</dt><dd class="font-mono text-xs break-all bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">{{auth.user()?.organization_slug||'Non renseigné'}}</dd></div></dl>
+<p class="mt-4 section-caption">Les informations d'identité et les permissions sont gérées par votre organisation. Les jetons de session ne sont pas enregistrés dans les préférences d'affichage.</p></section>
+<section class="card p-6 sm:p-7"><p class="eyebrow">Confort de lecture</p><h2 class="section-heading mt-1">Apparence de l'interface</h2><p class="section-caption mt-2">Choisissez le thème qui vous convient. Cette préférence est enregistrée sur cet appareil uniquement.</p>
+<fieldset class="mt-6"><legend class="field-label">Thème de l'interface</legend><div class="grid grid-cols-1 sm:grid-cols-3 gap-3">@for(t of themes;track t.value){<button type="button" class="option-tile !text-left" [class.option-tile-selected]="prefs.theme()===t.value" [attr.aria-pressed]="prefs.theme()===t.value" (click)="change(t.value)"><span class="font-bold block">{{t.label}}</span><span class="text-xs muted block mt-1">{{t.hint}}</span></button>}</div></fieldset>
+<p class="mt-4 text-xs muted flex items-center gap-2" role="status" aria-live="polite"><span class="inline-block w-2 h-2 rounded-full bg-[#176653]"></span> Thème actif : {{themeLabel()}}</p></section>
+<section class="card p-6 sm:p-7 xl:col-span-2"><h2 class="section-heading">Vos responsabilités et la confidentialité</h2><p class="section-caption mt-2">Le score mesure uniquement ce qui peut être justifié à partir des documents analysés. Toute décision importante concernant une personne reste humaine.</p><div class="grid gap-3 md:grid-cols-2 mt-5">
+@if(auth.user()?.role==='org_admin'){<a routerLink="/confidentialite" class="responsibility-tile"><strong>Conservation des candidatures →</strong><p class="section-caption mt-1">Durées de conservation, demandes de suppression et protection des données.</p></a><a routerLink="/equipe" class="responsibility-tile"><strong>Gérer les membres →</strong><p class="section-caption mt-1">Invitations, rôles et permissions au sein de l'entreprise.</p></a>}
+@if(auth.user()?.role==='recruiter'){<a routerLink="/affectations" class="responsibility-tile"><strong>Répartir les dossiers →</strong><p class="section-caption mt-1">Confier les candidatures à des évaluateurs autorisés.</p></a><a routerLink="/rapports" class="responsibility-tile"><strong>Consulter les rapports →</strong><p class="section-caption mt-1">Partager les résultats documentaires et les examens humains.</p></a>}
+@if(auth.user()?.role==='evaluator'){<a routerLink="/mes-examens" class="responsibility-tile"><strong>Mes dossiers à examiner →</strong><p class="section-caption mt-1">Consulter uniquement les candidatures qui vous sont affectées.</p></a>}
+</div></section></div>`})
+export class SettingsPage {
+ readonly auth=inject(AuthService);readonly prefs=inject(PreferencesService);
+ readonly themes:{value:ThemeMode;label:string;hint:string}[]=[{value:'light',label:'Clair',hint:'Fond lumineux'},{value:'dark',label:'Sombre',hint:'Lecture apaisée'},{value:'system',label:'Système',hint:'Selon l’appareil'}];
+ change(t:ThemeMode){this.prefs.setTheme(t);}
+ themeLabel(){return this.themes.find(x=>x.value===this.prefs.theme())?.label??'Système';}
+ initials(){return (this.auth.user()?.full_name??'').split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0].toUpperCase()).join('')||'TR';}
+ roleLabel(role:string|undefined){return ({org_admin:'Administrateur',recruiter:'Recruteur',evaluator:'Évaluateur'} as Record<string,string>)[role??'']??'Membre';}
+}

@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-10T22:27:05.157714+00:00",
+  "docker_cli_installed": false,
+  "docker_daemon_responding": false,
+  "compose_installed": false,
+  "compose_config_validated": false,
+  "core_services": {},
+  "real_full_stack_benchmark_executed": false,
+  "production_approved": false,
+  "blocker": "DOCKER_CLI_NOT_INSTALLED"
+}

@@ -1,0 +1,32 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.npm-cache/
+dist/
+.angular/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+coverage/
+.DS_Store
+*.sqlite3
+*.db
+*.log
+
+# Fichiers générés localement pendant les essais
+.playwright-mcp/
+/output/
+/exports/
+/tmp/
+compose.dev.yml
+
+# Local fine-tuning checkpoints (may memorize CVs; never commit)
+.venv-neural/
+private-models/
+checkpoints/
+training-output/
+*.safetensors
+pytorch_model.bin
+model.pt

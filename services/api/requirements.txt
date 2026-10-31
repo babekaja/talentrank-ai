@@ -1,0 +1,27 @@
+fastapi>=0.128,<1
+uvicorn[standard]>=0.34,<1
+sqlalchemy>=2.0.40,<2.1
+alembic>=1.16,<2
+pymysql>=1.1,<2
+pydantic>=2.10,<3
+pydantic-settings>=2.8,<3
+email-validator>=2.2,<3
+PyJWT>=2.10,<3
+argon2-cffi>=23.1,<26
+python-multipart>=0.0.20,<1
+celery[redis]>=5.5,<6
+minio>=7.2,<8
+pdfplumber>=0.11,<1
+python-docx>=1.2,<2
+pytesseract>=0.3.13,<1
+pypdfium2>=4.30,<6
+Pillow>=11,<13
+
+# Lightweight NLP rules (no pretrained spaCy weights necessary)
+spacy>=3.8,<4
+qdrant-client>=1.14,<2
+httpx>=0.27,<1
+
+# Phase 6: audited on-demand reports
+reportlab>=4.2,<5
+xlsxwriter>=3.2,<4

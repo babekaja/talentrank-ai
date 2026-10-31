@@ -1,0 +1,77 @@
+{
+  "dataset_sha256": "b3a79e18c53d3a78b241d56f28deb6bcffab2e4389a15209f23a91332e91c44f",
+  "synthetic_pairs": 12,
+  "method_group_diagnostics": {
+    "learned_pairwise/all": {
+      "wins": 11,
+      "losses": 1,
+      "ties": 0
+    },
+    "learned_pairwise/en": {
+      "wins": 6,
+      "losses": 0,
+      "ties": 0
+    },
+    "learned_pairwise/fr": {
+      "wins": 5,
+      "losses": 1,
+      "ties": 0
+    },
+    "learned_pairwise/trap_conditional": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "learned_pairwise/trap_job_ad": {
+      "wins": 4,
+      "losses": 0,
+      "ties": 0
+    },
+    "learned_pairwise/trap_learning": {
+      "wins": 3,
+      "losses": 1,
+      "ties": 0
+    },
+    "learned_pairwise/trap_negation": {
+      "wins": 3,
+      "losses": 0,
+      "ties": 0
+    },
+    "tfidf_char/all": {
+      "wins": 4,
+      "losses": 8,
+      "ties": 0
+    },
+    "tfidf_char/en": {
+      "wins": 1,
+      "losses": 5,
+      "ties": 0
+    },
+    "tfidf_char/fr": {
+      "wins": 3,
+      "losses": 3,
+      "ties": 0
+    },
+    "tfidf_char/trap_conditional": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "tfidf_char/trap_job_ad": {
+      "wins": 2,
+      "losses": 2,
+      "ties": 0
+    },
+    "tfidf_char/trap_learning": {
+      "wins": 1,
+      "losses": 3,
+      "ties": 0
+    },
+    "tfidf_char/trap_negation": {
+      "wins": 0,
+      "losses": 3,
+      "ties": 0
+    }
+  },
+  "disclaimer": "Synthetic hand-crafted pair order only; no calibrated probability, no skill confirmation, no deployment validity."
+}

@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["ES2022", "dom"]
+  },
+  "angularCompilerOptions": {"strictTemplates": true, "strictInjectionParameters": true, "strictInputAccessModifiers": true}
+}

@@ -1,0 +1,62 @@
+{
+  "corpus_sha256": "a9876d38e18e0155a243fcd08c0625d14529d2416eb960df63e929514942a6c0",
+  "corpus_metadata": {
+    "documents": 24,
+    "queries": 12,
+    "test_queries": 4
+  },
+  "test_languages": {
+    "fr": 2,
+    "en": 2
+  },
+  "methods_executed": [
+    "bm25",
+    "tfidf"
+  ],
+  "metrics": {
+    "bm25": {
+      "en": {
+        "queries": 2,
+        "hit_1": 0.5,
+        "recall_10": 1.0,
+        "ndcg_10": 0.8155,
+        "mrr_10": 0.75,
+        "ndcg_10_ci95": null
+      },
+      "fr": {
+        "queries": 2,
+        "hit_1": 0,
+        "recall_10": 1.0,
+        "ndcg_10": 0.6309,
+        "mrr_10": 0.5,
+        "ndcg_10_ci95": null
+      }
+    },
+    "tfidf": {
+      "en": {
+        "queries": 2,
+        "hit_1": 0.5,
+        "recall_10": 1.0,
+        "ndcg_10": 0.8155,
+        "mrr_10": 0.75,
+        "ndcg_10_ci95": null
+      },
+      "fr": {
+        "queries": 2,
+        "hit_1": 0.5,
+        "recall_10": 1.0,
+        "ndcg_10": 0.8155,
+        "mrr_10": 0.75,
+        "ndcg_10_ci95": null
+      }
+    }
+  },
+  "neural_inference_executed": false,
+  "scientific_readiness": "insufficient_evidence",
+  "deployment_enabled": false,
+  "limitations": [
+    "Les extraits du jeu de données ne sont pas enregistrés dans le rapport.",
+    "La récupération d’un passage ne démontre pas sa valeur comme preuve professionnelle.",
+    "La validation nécessite aussi un audit humain, biais indirects et essais en infrastructure réelle."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "baseline": "tfidf_char_3_5",
+  "all": {
+    "queries": 4,
+    "mrr": 1.0,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0
+  },
+  "by_language": {
+    "en": {
+      "queries": 3,
+      "mrr": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0
+    },
+    "fr": {
+      "queries": 1,
+      "mrr": 1.0,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0
+    }
+  },
+  "note": "Mesures sur passages annotés, pas sur l’embauche ou la valeur d’un candidat."
+}

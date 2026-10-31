@@ -1,0 +1,62 @@
+{
+  "kind": "offline_synthetic_docx_pipeline_only",
+  "documents_requested": 3000,
+  "documents_processed": 3000,
+  "error_samples": [],
+  "total_input_bytes": 110346525,
+  "pages_extracted": 3000,
+  "lexical_mentions": 3750,
+  "section_facts": 6000,
+  "matching_scores_computed": 2625,
+  "checkpoint_measurements": [
+    {
+      "documents": 100,
+      "seconds": 3.415,
+      "documents_per_second": 29.28,
+      "failed_samples": 0,
+      "rss_megabytes": 429.5
+    },
+    {
+      "documents": 500,
+      "seconds": 12.449,
+      "documents_per_second": 40.16,
+      "failed_samples": 0,
+      "rss_megabytes": 464.1
+    },
+    {
+      "documents": 1000,
+      "seconds": 23.783,
+      "documents_per_second": 42.05,
+      "failed_samples": 0,
+      "rss_megabytes": 489.0
+    },
+    {
+      "documents": 3000,
+      "seconds": 69.508,
+      "documents_per_second": 43.16,
+      "failed_samples": 0,
+      "rss_megabytes": 579.0
+    }
+  ],
+  "stage_seconds": {
+    "generate": 49.952,
+    "validate": 0.362,
+    "extract": 14.834,
+    "nlp": 3.296,
+    "matching": 0.279
+  },
+  "date_utc": "2026-10-10T22:27:26.026223+00:00",
+  "validated": false,
+  "production_certified": false,
+  "neural_inference_executed": false,
+  "ocr_executed": false,
+  "mysql_executed": false,
+  "minio_executed": false,
+  "celery_executed": false,
+  "full_stack_3000_executed": false,
+  "note": "Real docx parsing and local lexical analysis on synthetic inputs; NOT an API/Docker/OCR load test.",
+  "failed_total": 0,
+  "successful_documents": 3000,
+  "matching_calculations_attempted": 3000,
+  "review_required_or_incomplete": 375
+}

@@ -1,0 +1,2 @@
+# Standalone CPU research pipeline only; no FastAPI / Docker / spaCy / model downloads.
+scikit-learn>=1.7,<2

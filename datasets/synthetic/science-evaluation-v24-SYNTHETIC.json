@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "origin": "synthetic_created_for_tests",
+    "human_annotated": false
+  },
+  "passages": [
+    {
+      "id": "train-0-yes",
+      "text": "Développement d’un portail avec Angular et TypeScript. Projet fictif numéro 0-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-0-yes-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-0-no",
+      "text": "Je souhaite apprendre Angular et TypeScript. Projet fictif numéro 0-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-0-no-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-1-yes",
+      "text": "Built REST APIs with FastAPI and PostgreSQL. Projet fictif numéro 0-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-1-yes-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-1-no",
+      "text": "I want to learn FastAPI this year. Projet fictif numéro 0-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-1-no-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-2-yes",
+      "text": "Responsable inventaire, entrées et sorties de marchandises. Projet fictif numéro 0-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-2-yes-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-2-no",
+      "text": "Intérêt pour la gestion des stocks. Projet fictif numéro 0-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-2-no-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-3-yes",
+      "text": "Designed SQL relational schemas in MySQL. Projet fictif numéro 0-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-3-yes-doc",
+      "split": "train"
+    },
+    {
+      "id": "train-3-no",
+      "text": "I plan to study relational databases. Projet fictif numéro 0-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "train-3-no-doc",
+      "split": "train"
+    },
+    {
+      "id": "validation-0-yes",
+      "text": "Développement d’un portail avec Angular et TypeScript. Projet fictif numéro 1-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-0-yes-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-0-no",
+      "text": "Je souhaite apprendre Angular et TypeScript. Projet fictif numéro 1-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-0-no-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-1-yes",
+      "text": "Built REST APIs with FastAPI and PostgreSQL. Projet fictif numéro 1-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-1-yes-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-1-no",
+      "text": "I want to learn FastAPI this year. Projet fictif numéro 1-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-1-no-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-2-yes",
+      "text": "Responsable inventaire, entrées et sorties de marchandises. Projet fictif numéro 1-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-2-yes-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-2-no",
+      "text": "Intérêt pour la gestion des stocks. Projet fictif numéro 1-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-2-no-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-3-yes",
+      "text": "Designed SQL relational schemas in MySQL. Projet fictif numéro 1-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-3-yes-doc",
+      "split": "validation"
+    },
+    {
+      "id": "validation-3-no",
+      "text": "I plan to study relational databases. Projet fictif numéro 1-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "validation-3-no-doc",
+      "split": "validation"
+    },
+    {
+      "id": "test-0-yes",
+      "text": "Développement d’un portail avec Angular et TypeScript. Projet fictif numéro 2-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-0-yes-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-0-no",
+      "text": "Je souhaite apprendre Angular et TypeScript. Projet fictif numéro 2-0.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-0-no-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-1-yes",
+      "text": "Built REST APIs with FastAPI and PostgreSQL. Projet fictif numéro 2-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-1-yes-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-1-no",
+      "text": "I want to learn FastAPI this year. Projet fictif numéro 2-1.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-1-no-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-2-yes",
+      "text": "Responsable inventaire, entrées et sorties de marchandises. Projet fictif numéro 2-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-2-yes-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-2-no",
+      "text": "Intérêt pour la gestion des stocks. Projet fictif numéro 2-2.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-2-no-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-3-yes",
+      "text": "Designed SQL relational schemas in MySQL. Projet fictif numéro 2-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-3-yes-doc",
+      "split": "test"
+    },
+    {
+      "id": "test-3-no",
+      "text": "I plan to study relational databases. Projet fictif numéro 2-3.",
+      "organization_id": "synthetic-tenant-a",
+      "document_id": "test-3-no-doc",
+      "split": "test"
+    }
+  ],
+  "queries": [
+    {
+      "id": "train-0-q",
+      "family_id": "train-0",
+      "language": "fr",
+      "requirement": "Développeur Angular",
+      "organization_id": "synthetic-tenant-a",
+      "split": "train",
+      "authorized_documents": [
+        "train-0-yes-doc",
+        "train-0-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "train-0-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "train-1-q",
+      "family_id": "train-1",
+      "language": "en",
+      "requirement": "REST API development",
+      "organization_id": "synthetic-tenant-a",
+      "split": "train",
+      "authorized_documents": [
+        "train-1-yes-doc",
+        "train-1-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "train-1-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "train-2-q",
+      "family_id": "train-2",
+      "language": "fr",
+      "requirement": "Gestion des stocks",
+      "organization_id": "synthetic-tenant-a",
+      "split": "train",
+      "authorized_documents": [
+        "train-2-yes-doc",
+        "train-2-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "train-2-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "train-3-q",
+      "family_id": "train-3",
+      "language": "en",
+      "requirement": "SQL databases",
+      "organization_id": "synthetic-tenant-a",
+      "split": "train",
+      "authorized_documents": [
+        "train-3-yes-doc",
+        "train-3-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "train-3-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "validation-0-q",
+      "family_id": "validation-0",
+      "language": "fr",
+      "requirement": "Développeur Angular",
+      "organization_id": "synthetic-tenant-a",
+      "split": "validation",
+      "authorized_documents": [
+        "validation-0-yes-doc",
+        "validation-0-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "validation-0-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "validation-1-q",
+      "family_id": "validation-1",
+      "language": "en",
+      "requirement": "REST API development",
+      "organization_id": "synthetic-tenant-a",
+      "split": "validation",
+      "authorized_documents": [
+        "validation-1-yes-doc",
+        "validation-1-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "validation-1-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "validation-2-q",
+      "family_id": "validation-2",
+      "language": "fr",
+      "requirement": "Gestion des stocks",
+      "organization_id": "synthetic-tenant-a",
+      "split": "validation",
+      "authorized_documents": [
+        "validation-2-yes-doc",
+        "validation-2-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "validation-2-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "validation-3-q",
+      "family_id": "validation-3",
+      "language": "en",
+      "requirement": "SQL databases",
+      "organization_id": "synthetic-tenant-a",
+      "split": "validation",
+      "authorized_documents": [
+        "validation-3-yes-doc",
+        "validation-3-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "validation-3-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "test-0-q",
+      "family_id": "test-0",
+      "language": "fr",
+      "requirement": "Développeur Angular",
+      "organization_id": "synthetic-tenant-a",
+      "split": "test",
+      "authorized_documents": [
+        "test-0-yes-doc",
+        "test-0-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "test-0-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "test-1-q",
+      "family_id": "test-1",
+      "language": "en",
+      "requirement": "REST API development",
+      "organization_id": "synthetic-tenant-a",
+      "split": "test",
+      "authorized_documents": [
+        "test-1-yes-doc",
+        "test-1-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "test-1-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "test-2-q",
+      "family_id": "test-2",
+      "language": "fr",
+      "requirement": "Gestion des stocks",
+      "organization_id": "synthetic-tenant-a",
+      "split": "test",
+      "authorized_documents": [
+        "test-2-yes-doc",
+        "test-2-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "test-2-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    },
+    {
+      "id": "test-3-q",
+      "family_id": "test-3",
+      "language": "en",
+      "requirement": "SQL databases",
+      "organization_id": "synthetic-tenant-a",
+      "split": "test",
+      "authorized_documents": [
+        "test-3-yes-doc",
+        "test-3-no-doc"
+      ],
+      "relevant_passage_ids": [
+        "test-3-yes"
+      ],
+      "annotator_ids": [
+        "synthetic-annotation-A",
+        "synthetic-annotation-B"
+      ]
+    }
+  ]
+}

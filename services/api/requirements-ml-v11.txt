@@ -1,0 +1,5 @@
+# Standalone CPU research laboratory: scikit-learn, no downloaded neural weights.
+-r requirements-ml-v10.txt
+pytest>=8,<10
+# For the full API/backend suite also install: pip install -r requirements-dev.txt
+# Local Sentence Transformers adapters are NOT required by this phase.

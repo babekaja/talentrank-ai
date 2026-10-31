@@ -1,0 +1,10 @@
+{"id":"fr_direct","text":"Projet de développement Angular et TypeScript.","expected_codes":["angular","typescript"]}
+{"id":"en_direct","text":"Built backend services using FastAPI and MySQL.","expected_codes":["fastapi","mysql"]}
+{"id":"negative","text":"Sans expérience en Python.","expected_codes":[]}
+{"id":"future_learning","text":"Je souhaite apprendre Docker.","expected_codes":[]}
+{"id":"no_skill","text":"J'utilise des logiciels sur ordinateur.","expected_codes":[]}
+{"id":"related","text":"Développement avec FastAPI.","expected_codes":["fastapi"]}
+{"id":"personal_project","text":"J'ai réalisé un projet Angular sans diplôme universitaire.","expected_codes":["angular"]}
+{"id":"supply_chain","text":"Inventory management et gestion des stocks dans une ONG.","expected_codes":["inventory_management"]}
+{"id":"false_substring","text":"L'équipe utilise AngularJS (pas Angular).","expected_codes":[]}
+{"id":"semantic_only","text":"Création de services métier côté serveur.","expected_codes":[]}

@@ -1,0 +1,4 @@
+# Optional real pretrained-encoder fine-tuning on a locally cached Sentence Transformer.
+# Keep model weights in a private location; no model download takes place automatically.
+-r requirements-ml-v12.txt
+sentence-transformers>=5,<6

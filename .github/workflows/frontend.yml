@@ -1,0 +1,27 @@
+name: Angular Frontend CI
+on:
+  push:
+    paths: ['apps/web/**','scripts/frontend_static_check_v15.cjs','scripts/frontend_static_check_v16.cjs','.github/workflows/frontend.yml']
+  pull_request:
+    paths: ['apps/web/**','scripts/frontend_static_check_v15.cjs','scripts/frontend_static_check_v16.cjs','.github/workflows/frontend.yml']
+jobs:
+  angular-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.3'
+      - name: Install frontend dependencies
+        working-directory: apps/web
+        run: npm install --no-audit --no-fund
+      - name: Static source and permission checks
+        working-directory: apps/web
+        run: npm run test:static
+      - name: Angular unit tests
+        working-directory: apps/web
+        run: npm run test:unit
+      - name: Compile Angular production SPA
+        working-directory: apps/web
+        run: npm run build

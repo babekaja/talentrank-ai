@@ -1,0 +1,1011 @@
+{
+  "data_notice": "Entirely fictional, manually specified labels; cannot validate real recruiting models.",
+  "passages": [
+    {
+      "id": "p01",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_001",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "J’ai développé une application de gestion avec Angular et TypeScript."
+    },
+    {
+      "id": "p02",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_002",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Je souhaite apprendre Angular dans les prochaines semaines."
+    },
+    {
+      "id": "p03",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_003",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Built Angular components with TypeScript for a school management application."
+    },
+    {
+      "id": "p04",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_004",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "I have no professional experience using Angular."
+    },
+    {
+      "id": "p05",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_005",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Conception et maintenance de services API REST avec FastAPI et Python."
+    },
+    {
+      "id": "p06",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_006",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Implemented Python FastAPI REST endpoints with validation and tests."
+    },
+    {
+      "id": "p07",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_007",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Job requirements: Python REST API and FastAPI are essential."
+    },
+    {
+      "id": "p08",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_008",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Gestion des stocks, inventaires mensuels et suivi des approvisionnements."
+    },
+    {
+      "id": "p09",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_009",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Oversaw inventory management and warehouse stock counts for a small retailer."
+    },
+    {
+      "id": "p10",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_010",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Interested in an inventory management position but no experience yet."
+    },
+    {
+      "id": "p11",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_011",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Administration de PostgreSQL avec sauvegardes et optimisation SQL."
+    },
+    {
+      "id": "p12",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_012",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Optimisation de requêtes MySQL, index et migrations de schéma."
+    },
+    {
+      "id": "p13",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_013",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Worked with Microsoft SQL Server database administration."
+    },
+    {
+      "id": "p14",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_014",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "J’aimerais apprendre le langage Python à l’avenir."
+    },
+    {
+      "id": "p15",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_015",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Développement d’un script Python pour analyser des fichiers CSV."
+    },
+    {
+      "id": "p16",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_016",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Used Git branches and pull requests to coordinate code reviews."
+    },
+    {
+      "id": "p17",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_017",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Created Docker images and Compose stacks for deploying an internal service."
+    },
+    {
+      "id": "p18",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_018",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Maintained Kubernetes workloads and configured deployment manifests."
+    },
+    {
+      "id": "p19",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_019",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Je commence seulement à apprendre Docker, sans pratique."
+    },
+    {
+      "id": "p20",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_020",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Wrote automated pytest unit tests and integration tests for API services."
+    },
+    {
+      "id": "p21",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_021",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "I have never written automated tests using pytest."
+    },
+    {
+      "id": "p22",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_022",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Stage de développement web : interfaces React et tests de composants."
+    },
+    {
+      "id": "p23",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_023",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Built React hooks and interactive UI forms."
+    },
+    {
+      "id": "p24",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_024",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Used spreadsheet and word processing software in an office."
+    },
+    {
+      "id": "p25",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_025",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Competences requises : Docker, Angular, Python et Git."
+    },
+    {
+      "id": "p26",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_026",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Automated database backups and schema migrations in MySQL."
+    },
+    {
+      "id": "p27",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_027",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Piloted stock reconciliation and warehouse inventory controls."
+    },
+    {
+      "id": "p28",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_028",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Mise en production de conteneurs Docker pour un projet associatif."
+    },
+    {
+      "id": "p29",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_029",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Développement de tests automatisés avec pytest pour un service web."
+    },
+    {
+      "id": "p30",
+      "organization_id": "fictional_tenant_a",
+      "document_id": "synthetic_doc_030",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Je sais seulement ouvrir une application sur un navigateur."
+    },
+    {
+      "id": "foreign01",
+      "organization_id": "fictional_tenant_b",
+      "document_id": "foreign_doc",
+      "page_number": 1,
+      "start_offset": 0,
+      "text": "Built Angular TypeScript apps. CONTACT EXAMPLE RESTRICTED."
+    }
+  ],
+  "queries": [
+    {
+      "id": "q01",
+      "language": "fr",
+      "requirement": "développement Angular",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p01"
+      ],
+      "hard_negative_passage_ids": [
+        "p02",
+        "p04",
+        "p25"
+      ]
+    },
+    {
+      "id": "q02",
+      "language": "en",
+      "requirement": "Angular front-end development",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p03"
+      ],
+      "hard_negative_passage_ids": [
+        "p02",
+        "p04",
+        "p25"
+      ]
+    },
+    {
+      "id": "q03",
+      "language": "fr",
+      "requirement": "création API REST Python FastAPI",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p05"
+      ],
+      "hard_negative_passage_ids": [
+        "p07",
+        "p14"
+      ]
+    },
+    {
+      "id": "q04",
+      "language": "en",
+      "requirement": "Python backend REST endpoints",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p06"
+      ],
+      "hard_negative_passage_ids": [
+        "p07",
+        "p14"
+      ]
+    },
+    {
+      "id": "q05",
+      "language": "fr",
+      "requirement": "gestion de stock et inventaire",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p08"
+      ],
+      "hard_negative_passage_ids": [
+        "p10"
+      ]
+    },
+    {
+      "id": "q06",
+      "language": "en",
+      "requirement": "warehouse inventory management",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p09"
+      ],
+      "hard_negative_passage_ids": [
+        "p10"
+      ]
+    },
+    {
+      "id": "q07",
+      "language": "fr",
+      "requirement": "administration MySQL",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p12"
+      ],
+      "hard_negative_passage_ids": [
+        "p24"
+      ]
+    },
+    {
+      "id": "q08",
+      "language": "en",
+      "requirement": "MySQL database backups",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p26"
+      ],
+      "hard_negative_passage_ids": [
+        "p24"
+      ]
+    },
+    {
+      "id": "q09",
+      "language": "fr",
+      "requirement": "gestion de conteneurs Docker",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p28"
+      ],
+      "hard_negative_passage_ids": [
+        "p19",
+        "p25"
+      ]
+    },
+    {
+      "id": "q10",
+      "language": "en",
+      "requirement": "build Docker images",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p17"
+      ],
+      "hard_negative_passage_ids": [
+        "p19",
+        "p25"
+      ]
+    },
+    {
+      "id": "q11",
+      "language": "fr",
+      "requirement": "tests automatisés pytest",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p29"
+      ],
+      "hard_negative_passage_ids": [
+        "p21"
+      ]
+    },
+    {
+      "id": "q12",
+      "language": "en",
+      "requirement": "pytest automated API testing",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p20"
+      ],
+      "hard_negative_passage_ids": [
+        "p21"
+      ]
+    },
+    {
+      "id": "q13",
+      "language": "en",
+      "requirement": "React UI implementation",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p23"
+      ],
+      "hard_negative_passage_ids": [
+        "p22"
+      ]
+    },
+    {
+      "id": "q14",
+      "language": "fr",
+      "requirement": "utilisation Git pour revue du code",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p16"
+      ],
+      "hard_negative_passage_ids": [
+        "p24"
+      ]
+    },
+    {
+      "id": "q15",
+      "language": "en",
+      "requirement": "Kubernetes deployment",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p18"
+      ],
+      "hard_negative_passage_ids": [
+        "p19"
+      ]
+    },
+    {
+      "id": "q16",
+      "language": "fr",
+      "requirement": "analyse de données avec Python",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p15"
+      ],
+      "hard_negative_passage_ids": [
+        "p14"
+      ]
+    },
+    {
+      "id": "q17",
+      "language": "en",
+      "requirement": "inventory stock reconciliation",
+      "organization_id": "fictional_tenant_a",
+      "authorized_documents": [
+        "synthetic_doc_001",
+        "synthetic_doc_002",
+        "synthetic_doc_003",
+        "synthetic_doc_004",
+        "synthetic_doc_005",
+        "synthetic_doc_006",
+        "synthetic_doc_007",
+        "synthetic_doc_008",
+        "synthetic_doc_009",
+        "synthetic_doc_010",
+        "synthetic_doc_011",
+        "synthetic_doc_012",
+        "synthetic_doc_013",
+        "synthetic_doc_014",
+        "synthetic_doc_015",
+        "synthetic_doc_016",
+        "synthetic_doc_017",
+        "synthetic_doc_018",
+        "synthetic_doc_019",
+        "synthetic_doc_020",
+        "synthetic_doc_021",
+        "synthetic_doc_022",
+        "synthetic_doc_023",
+        "synthetic_doc_024",
+        "synthetic_doc_025",
+        "synthetic_doc_026",
+        "synthetic_doc_027",
+        "synthetic_doc_028",
+        "synthetic_doc_029",
+        "synthetic_doc_030"
+      ],
+      "relevant_passage_ids": [
+        "p27"
+      ],
+      "hard_negative_passage_ids": [
+        "p10"
+      ]
+    }
+  ]
+}

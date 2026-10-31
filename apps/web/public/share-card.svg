@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f7f8"/>
+  <rect x="80" y="80" width="1040" height="470" fill="#15354c"/>
+  <rect x="132" y="132" width="72" height="72" rx="15" fill="#7dcbbf"/>
+  <path d="M147 151h42v9h-17v27h-9v-27h-16z" fill="#15354c"/>
+  <text x="226" y="185" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">TalentRank AI</text>
+  <text x="132" y="310" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Examinez les candidatures</text>
+  <text x="132" y="382" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">avec leurs preuves.</text>
+  <text x="132" y="466" fill="#b6d6dc" font-family="Arial, sans-serif" font-size="30">La décision reste humaine.</text>
+</svg>

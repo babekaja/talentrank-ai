@@ -1,0 +1,62 @@
+{
+  "passages": [
+    {
+      "id": "p1",
+      "text": "Angular TypeScript components developed for school inventory system"
+    },
+    {
+      "id": "p2",
+      "text": "Developed Python FastAPI REST endpoints and unit tests"
+    },
+    {
+      "id": "p3",
+      "text": "I would like to learn Angular"
+    },
+    {
+      "id": "p4",
+      "text": "Gestion des stocks de produits dans un entrepôt"
+    },
+    {
+      "id": "p5",
+      "text": "Experience in event marketing and graphic design"
+    },
+    {
+      "id": "p6",
+      "text": "MySQL indexing query optimization and migrations"
+    }
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "language": "en",
+      "requirement": "Angular development",
+      "relevant_passage_ids": [
+        "p1"
+      ]
+    },
+    {
+      "id": "q2",
+      "language": "en",
+      "requirement": "Python REST API backend",
+      "relevant_passage_ids": [
+        "p2"
+      ]
+    },
+    {
+      "id": "q3",
+      "language": "fr",
+      "requirement": "gestion des stocks",
+      "relevant_passage_ids": [
+        "p4"
+      ]
+    },
+    {
+      "id": "q4",
+      "language": "en",
+      "requirement": "MySQL administration",
+      "relevant_passage_ids": [
+        "p6"
+      ]
+    }
+  ]
+}

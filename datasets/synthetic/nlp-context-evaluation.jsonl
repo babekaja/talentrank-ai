@@ -1,0 +1,24 @@
+{"id":"fr1","language":"fr","text":"Projets\nApplication Angular et TypeScript pour une école.","expected_codes":["angular","typescript"]}
+{"id":"fr2","language":"fr","text":"Je souhaite apprendre Angular.","expected_codes":[]}
+{"id":"fr3","language":"fr","text":"Sans expérience en Python.","expected_codes":[]}
+{"id":"fr4","language":"fr","text":"Projet AngularJS et React.","expected_codes":[]}
+{"id":"fr5","language":"fr","text":"Compétences\nJavaScript et TypeScript.","expected_codes":["javascript","typescript"]}
+{"id":"fr6","language":"fr","text":"Développement JS pour un site communautaire.","expected_codes":["javascript"]}
+{"id":"fr7","language":"fr","text":"Expérience professionnelle\nGestion des stocks pendant un stage.","expected_codes":["inventory_management"]}
+{"id":"fr8","language":"fr","text":"Java et Kotlin utilisés sur Android.","expected_codes":["java","kotlin"]}
+{"id":"fr9","language":"fr","text":"Python : débutant.","expected_codes":[]}
+{"id":"fr10","language":"fr","text":"Je n'ai jamais utilisé Docker.","expected_codes":[]}
+{"id":"fr11","language":"fr","text":"Projets\nUne API REST utilisant MySQL.","expected_codes":["rest_api","mysql"]}
+{"id":"fr12","language":"fr","text":"Compétences requises\nAngular\nGit\nDocker","expected_codes":[]}
+{"id":"en1","language":"en","text":"Projects\nBuilt Angular UI with a TypeScript backend client.","expected_codes":["angular","typescript"]}
+{"id":"en2","language":"en","text":"I want to learn Python.","expected_codes":[]}
+{"id":"en3","language":"en","text":"No experience in Python.","expected_codes":[]}
+{"id":"en4","language":"en","text":"Developed REST APIs with FastAPI and MySQL.","expected_codes":["fastapi","mysql"]}
+{"id":"en5","language":"en","text":"Currently learning Docker.","expected_codes":[]}
+{"id":"en6","language":"en","text":"Professional experience\nManaged inventory management activities.","expected_codes":["inventory_management"]}
+{"id":"en7","language":"en","text":"Required skills\nPostgreSQL\nLinux\nGit","expected_codes":[]}
+{"id":"en8","language":"en","text":"Skills\nGit\nLinux","expected_codes":["git","linux"]}
+{"id":"en9","language":"en","text":"JavaScript not mastered.","expected_codes":[]}
+{"id":"en10","language":"en","text":"Interested in Angular.","expected_codes":[]}
+{"id":"en11","language":"en","text":"I deployed Docker containers and used PostgreSQL.","expected_codes":["docker","postgresql"]}
+{"id":"en12","language":"en","text":"No previous knowledge of Kotlin.","expected_codes":[]}

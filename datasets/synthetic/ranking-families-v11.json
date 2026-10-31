@@ -1,0 +1,17 @@
+{
+  "families": {
+    "q01": "angular", "q02": "angular",
+    "q03": "api_python", "q04": "api_python",
+    "q05": "inventory", "q06": "inventory", "q17": "inventory",
+    "q07": "database", "q08": "database",
+    "q09": "docker", "q10": "docker",
+    "q11": "testing", "q12": "testing",
+    "q13": "react", "q14": "git", "q15": "kubernetes", "q16": "data_python"
+  },
+  "split_by_family": {
+    "angular": "train", "api_python": "train", "inventory": "train",
+    "database": "train", "docker": "train",
+    "testing": "calibration", "git": "calibration",
+    "react": "test", "kubernetes": "test", "data_python": "test"
+  }
+}

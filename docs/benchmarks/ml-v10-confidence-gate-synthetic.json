@@ -1,0 +1,24 @@
+{
+  "experiment": "triage_conservative_gate_v10",
+  "dataset_sha256": "0279fa6a94c39616e9fbf756f9da19c3a1fc0f593d836271a3ab99ef671eb9d2",
+  "calibration_samples": 18,
+  "test_samples": 18,
+  "legacy_calibration": {
+    "selected": false,
+    "reason": "NO_CALIBRATED_THRESHOLD",
+    "min_precision_requested": 0.9
+  },
+  "v10_wilson_guard": {
+    "enabled": false,
+    "threshold": null,
+    "selected": 0,
+    "reason": "INSUFFICIENT_CALIBRATION_EVIDENCE",
+    "min_selected": 30,
+    "required_wilson_lower95": 0.9
+  },
+  "test_suggestions": 0,
+  "test_false_support_suggestions": 0,
+  "test_precision": null,
+  "test_abstentions": 18,
+  "note": "Research only. Calibration and test never mixed; no person-level outputs."
+}

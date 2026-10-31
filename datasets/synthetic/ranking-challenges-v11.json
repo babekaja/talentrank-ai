@@ -1,0 +1,17 @@
+{
+  "dataset_type": "handcrafted_synthetic_evidence_vs_trap",
+  "cases": [
+    {"id":"c01", "language":"fr", "trap":"learning", "requirement":"développement Angular", "positive":"J'ai développé des composants Angular pour un portail d'inscription.", "negative":"Je souhaite apprendre Angular pour mon futur emploi."},
+    {"id":"c02", "language":"fr", "trap":"job_ad", "requirement":"Docker", "positive":"Création des images Docker et configuration du déploiement.", "negative":"Compétences requises : Docker et systèmes Linux."},
+    {"id":"c03", "language":"fr", "trap":"negation", "requirement":"API REST Python", "positive":"Conception et maintenance de services REST avec Python.", "negative":"Sans expérience en API REST Python."},
+    {"id":"c04", "language":"fr", "trap":"learning", "requirement":"gestion des stocks", "positive":"J'ai géré les inventaires et les stocks dans un atelier.", "negative":"Je souhaite apprendre la gestion des stocks."},
+    {"id":"c05", "language":"fr", "trap":"conditional", "requirement":"administration MySQL", "positive":"Administration quotidienne de MySQL et planification des sauvegardes.", "negative":"Si je connaissais MySQL, je pourrais aider cette équipe."},
+    {"id":"c06", "language":"fr", "trap":"job_ad", "requirement":"tests automatisés pytest", "positive":"J'ai écrit des tests automatisés avec pytest.", "negative":"Poste exige des tests automatisés avec pytest."},
+    {"id":"c07", "language":"en", "trap":"learning", "requirement":"Angular frontend development", "positive":"Implemented Angular components for the public web portal.", "negative":"Plan to learn Angular frontend development next year."},
+    {"id":"c08", "language":"en", "trap":"negation", "requirement":"MySQL administration", "positive":"Managed MySQL access controls and backup routines.", "negative":"No experience in MySQL administration."},
+    {"id":"c09", "language":"en", "trap":"job_ad", "requirement":"FastAPI REST endpoints", "positive":"Built REST endpoints using FastAPI and Python.", "negative":"Job requirements: FastAPI REST endpoints."},
+    {"id":"c10", "language":"en", "trap":"learning", "requirement":"Docker containers", "positive":"Deployed application services in Docker containers.", "negative":"Interested in learning Docker containers."},
+    {"id":"c11", "language":"en", "trap":"job_ad", "requirement":"Kubernetes deployment", "positive":"Maintained production Kubernetes deployments.", "negative":"Candidate must have Kubernetes deployment experience."},
+    {"id":"c12", "language":"en", "trap":"negation", "requirement":"inventory management", "positive":"Oversaw inventory management and monthly stock reconciliation.", "negative":"Never worked in inventory management."}
+  ]
+}

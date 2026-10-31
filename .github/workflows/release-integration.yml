@@ -1,0 +1,49 @@
+name: TalentRank integrated verification (synthetic data)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  real-services:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Start docker stack with unique local secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash scripts/configure-dev.sh
+          docker compose up -d mysql redis minio
+          docker compose build api worker web
+          docker compose run --rm api alembic upgrade head
+          docker compose run --rm api python -m scripts.seed_skills
+          docker compose up -d api worker web
+      - name: Verify infrastructure from actual API container
+        run: |
+          docker compose exec -T api python -m scripts.preflight --check-services
+          docker compose exec -T api alembic check
+      - name: Synthetically exercise upload, workers and matching
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install httpx python-docx playwright
+          export TR_SMOKE_PASSWORD="$(openssl rand -hex 24)"
+          printf '%s\n' "$TR_SMOKE_PASSWORD" | docker compose exec -T api python -m scripts.bootstrap_admin \
+            --organization "Fictional Evaluation" --slug demo-ci \
+            --email "demo@example.org" --name "Test person" --password-stdin
+          export TR_SMOKE_URL=http://127.0.0.1:8080
+          export TR_SMOKE_ORG=demo-ci
+          export TR_SMOKE_EMAIL=demo@example.org
+          (cd services/api && python -m scripts.smoke_stack_v18 --timeout 420)
+          python -m playwright install --with-deps chromium
+          python scripts/browser_smoke_v28.py
+      - name: Show container status after failure
+        if: failure()
+        run: docker compose ps
+      - name: Stop test services
+        if: always()
+        run: docker compose down -v --remove-orphans

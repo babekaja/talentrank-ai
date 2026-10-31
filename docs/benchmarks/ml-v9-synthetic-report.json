@@ -1,0 +1,182 @@
+{
+  "annotation": {
+    "by_split": {
+      "calibration": {
+        "insufficient": 6,
+        "related": 6,
+        "supports": 6
+      },
+      "test": {
+        "insufficient": 6,
+        "related": 6,
+        "supports": 6
+      },
+      "train": {
+        "insufficient": 12,
+        "related": 12,
+        "supports": 12
+      }
+    },
+    "cohen_kappa": 0.9792,
+    "dataset_sha256": "0279fa6a94c39616e9fbf756f9da19c3a1fc0f593d836271a3ab99ef671eb9d2",
+    "disagreements": 1,
+    "languages": {
+      "en": 36,
+      "fr": 36
+    },
+    "pairs": 72,
+    "raw_agreement": 0.9861,
+    "warning": "Annotations de passages documentaires, jamais décisions RH."
+  },
+  "dataset_type": "SYNTHETIC_RESEARCH_ONLY",
+  "experiment": {
+    "calibration": {
+      "min_precision_requested": 0.9,
+      "reason": "NO_CALIBRATED_THRESHOLD",
+      "selected": false
+    },
+    "calibration_samples": 18,
+    "classes": [
+      "supports",
+      "related",
+      "insufficient"
+    ],
+    "model": "tfidf_word_char_lr_3class_v1",
+    "test": {
+      "by_language": {
+        "en": {
+          "classification": {
+            "insufficient": {
+              "f1": 0.6667,
+              "fn": 0,
+              "fp": 3,
+              "precision": 0.5,
+              "recall": 1.0,
+              "support": 3,
+              "tp": 3
+            },
+            "macro_f1": 0.2222,
+            "related": {
+              "f1": 0.0,
+              "fn": 3,
+              "fp": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3,
+              "tp": 0
+            },
+            "supports": {
+              "f1": 0.0,
+              "fn": 3,
+              "fp": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3,
+              "tp": 0
+            }
+          },
+          "selective": {
+            "abstentions": 9,
+            "false_support_suggestions": 0,
+            "pairs": 9,
+            "suggestion_precision": null,
+            "suggestion_precision_wilson95": null,
+            "suggestion_recall": 0.0,
+            "suggestions": 0
+          }
+        },
+        "fr": {
+          "classification": {
+            "insufficient": {
+              "f1": 0.0,
+              "fn": 3,
+              "fp": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3,
+              "tp": 0
+            },
+            "macro_f1": 0.2222,
+            "related": {
+              "f1": 0.0,
+              "fn": 3,
+              "fp": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3,
+              "tp": 0
+            },
+            "supports": {
+              "f1": 0.6667,
+              "fn": 0,
+              "fp": 3,
+              "precision": 0.5,
+              "recall": 1.0,
+              "support": 3,
+              "tp": 3
+            }
+          },
+          "selective": {
+            "abstentions": 9,
+            "false_support_suggestions": 0,
+            "pairs": 9,
+            "suggestion_precision": null,
+            "suggestion_precision_wilson95": null,
+            "suggestion_recall": 0.0,
+            "suggestions": 0
+          }
+        }
+      },
+      "classification": {
+        "insufficient": {
+          "f1": 0.5,
+          "fn": 3,
+          "fp": 3,
+          "precision": 0.5,
+          "recall": 0.5,
+          "support": 6,
+          "tp": 3
+        },
+        "macro_f1": 0.3333,
+        "related": {
+          "f1": 0.0,
+          "fn": 6,
+          "fp": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 6,
+          "tp": 0
+        },
+        "supports": {
+          "f1": 0.5,
+          "fn": 3,
+          "fp": 3,
+          "precision": 0.5,
+          "recall": 0.5,
+          "support": 6,
+          "tp": 3
+        }
+      },
+      "probability_diagnostics": {
+        "bins": 8,
+        "expected_calibration_error": 0.0501,
+        "multiclass_brier": 0.6399,
+        "warning": "Diagnostic instable sur petits jeux, ne mesure pas la probabilité d’embauche."
+      },
+      "selective": {
+        "abstentions": 18,
+        "false_support_suggestions": 0,
+        "pairs": 18,
+        "suggestion_precision": null,
+        "suggestion_precision_wilson95": null,
+        "suggestion_recall": 0.0,
+        "suggestions": 0
+      }
+    },
+    "test_samples": 18,
+    "train_only_fit": true,
+    "training_samples": 36,
+    "warning": "Évaluation hors production. Aucun modèle entraîné sur données synthétiques ne doit être utilisé en recrutement."
+  },
+  "important": "N’utiliser ces résultats ni pour rejeter, ni pour recruter automatiquement. Modèle non déployé."
+}

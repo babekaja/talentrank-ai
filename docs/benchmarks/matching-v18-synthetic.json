@@ -1,0 +1,42 @@
+{
+  "kind": "synthetic_matching_only",
+  "disclaimer": "Only the pure scoring formula is timed; success means computed without exception, not a full score or CV ingestion. Experience requirements stay unassessed.",
+  "results": [
+    {
+      "items": 100,
+      "success": 100,
+      "complete_scores": 0,
+      "diagnostic_subsets": 100,
+      "seconds": 0.0351,
+      "per_second": 2849.5,
+      "peak_tracemalloc_bytes": 10275
+    },
+    {
+      "items": 500,
+      "success": 500,
+      "complete_scores": 0,
+      "diagnostic_subsets": 500,
+      "seconds": 0.1684,
+      "per_second": 2968.4,
+      "peak_tracemalloc_bytes": 8884
+    },
+    {
+      "items": 1000,
+      "success": 1000,
+      "complete_scores": 0,
+      "diagnostic_subsets": 1000,
+      "seconds": 0.3388,
+      "per_second": 2951.6,
+      "peak_tracemalloc_bytes": 8884
+    },
+    {
+      "items": 3000,
+      "success": 3000,
+      "complete_scores": 0,
+      "diagnostic_subsets": 3000,
+      "seconds": 1.0303,
+      "per_second": 2911.7,
+      "peak_tracemalloc_bytes": 8912
+    }
+  ]
+}

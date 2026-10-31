@@ -1,0 +1,37 @@
+{
+  "kind": "offline_synthetic_docx_pipeline_only",
+  "documents_requested": 100,
+  "documents_processed": 100,
+  "error_samples": [],
+  "total_input_bytes": 3678389,
+  "pages_extracted": 100,
+  "lexical_mentions": 125,
+  "section_facts": 180,
+  "matching_scores_computed": 87,
+  "checkpoint_measurements": [
+    {
+      "documents": 100,
+      "seconds": 3.386,
+      "documents_per_second": 29.53,
+      "failed_samples": 0,
+      "rss_megabytes": 429.6
+    }
+  ],
+  "stage_seconds": {
+    "generate": 1.621,
+    "validate": 0.011,
+    "extract": 0.5,
+    "nlp": 1.221,
+    "matching": 0.009
+  },
+  "date_utc": "2026-10-10T22:25:17.536901+00:00",
+  "validated": false,
+  "production_certified": false,
+  "neural_inference_executed": false,
+  "ocr_executed": false,
+  "mysql_executed": false,
+  "minio_executed": false,
+  "celery_executed": false,
+  "full_stack_3000_executed": false,
+  "note": "Real docx parsing and local lexical analysis on synthetic inputs; NOT an API/Docker/OCR load test."
+}

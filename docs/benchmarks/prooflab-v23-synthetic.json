@@ -1,0 +1,81 @@
+{
+  "dataset_sha256": "4cd19069d889b842bf5600115b6e54c5658ac2dd407dbe7858d1f1a78e08821e",
+  "scope": "fictional_passage_retrieval_only",
+  "model_type": "lexical_baselines_no_neural_inference",
+  "queries": 17,
+  "by_language": {
+    "en": {
+      "queries": 9,
+      "metrics": {
+        "bm25": {
+          "hit_1": 0.8889,
+          "recall_10": 1.0,
+          "ndcg_10": 0.9367,
+          "mrr_10": 0.9167
+        },
+        "tfidf": {
+          "hit_1": 0.7778,
+          "recall_10": 1.0,
+          "ndcg_10": 0.8957,
+          "mrr_10": 0.8611
+        },
+        "rrf": {
+          "hit_1": 0.8889,
+          "recall_10": 1.0,
+          "ndcg_10": 0.9444,
+          "mrr_10": 0.9259
+        }
+      }
+    },
+    "fr": {
+      "queries": 8,
+      "metrics": {
+        "bm25": {
+          "hit_1": 0.375,
+          "recall_10": 0.875,
+          "ndcg_10": 0.626,
+          "mrr_10": 0.5469
+        },
+        "tfidf": {
+          "hit_1": 0.75,
+          "recall_10": 1.0,
+          "ndcg_10": 0.8914,
+          "mrr_10": 0.8542
+        },
+        "rrf": {
+          "hit_1": 0.5,
+          "recall_10": 1.0,
+          "ndcg_10": 0.7397,
+          "mrr_10": 0.6562
+        }
+      }
+    }
+  },
+  "overall": {
+    "bm25": {
+      "hit_1": 0.6471,
+      "recall_10": 0.9412,
+      "ndcg_10": 0.7905,
+      "mrr_10": 0.7426
+    },
+    "tfidf": {
+      "hit_1": 0.7647,
+      "recall_10": 1.0,
+      "ndcg_10": 0.8937,
+      "mrr_10": 0.8578
+    },
+    "rrf": {
+      "hit_1": 0.7059,
+      "recall_10": 1.0,
+      "ndcg_10": 0.8481,
+      "mrr_10": 0.799
+    }
+  },
+  "validation_status": "synthetic_only_not_validated_for_recruitment",
+  "limitations": [
+    "Jeu entièrement fictif et de petite taille.",
+    "Les labels ne sont pas des décisions d’embauche.",
+    "Un classement de passages ne prouve pas une compétence.",
+    "Aucun résultat n’autorise une décision RH automatique."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "release_gate": "not_certified",
+  "counterfactual": {
+    "dataset_sha256": "22396ed1d141026e5853be2dfcdaa70361cdecd669573fe3f47c9f861053d37d",
+    "pairs": 3,
+    "by_variation": {
+      "address_proxy": {
+        "count": 1,
+        "changed": 0,
+        "removed": 0,
+        "added": 0
+      },
+      "identity": {
+        "count": 1,
+        "changed": 0,
+        "removed": 0,
+        "added": 0
+      },
+      "school_prestige": {
+        "count": 1,
+        "changed": 0,
+        "removed": 0,
+        "added": 0
+      }
+    },
+    "changed_pairs": 0,
+    "status": "counterfactual_research_not_fairness_certification",
+    "limitations": [
+      "La variation peut modifier un signal légitime; revue humaine nécessaire.",
+      "Aucun attribut sensible n’est inféré.",
+      "Une invariance parfaite sur les paires ne garantit pas une absence de biais indirect."
+    ]
+  }
+}

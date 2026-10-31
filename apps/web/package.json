@@ -1,0 +1,44 @@
+{
+  "name": "talentrank-web",
+  "version": "0.28.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --host 0.0.0.0 --port 4200 --proxy-config proxy.conf.json",
+    "build": "ng build --configuration production",
+    "build:dev": "ng build --configuration development",
+    "test:static": "node ../../scripts/frontend_static_check_v15.cjs && node ../../scripts/frontend_static_check_v16.cjs && node ../../scripts/frontend_ux_check_v17.cjs && node ../../scripts/frontend_screens_check_v19.cjs && npm run test:ui-v20 && npm run test:proof-v21 && npm run test:ui-v24 && npm run test:simple-v26",
+    "test:ui-v20": "node ../../scripts/frontend_ui_v20_check.cjs",
+    "test:proof-v21": "node ../../scripts/frontend_proof_ui_v21_check.cjs",
+    "test:ui-v24": "node ../../scripts/frontend_v24_check.cjs",
+    "test:simple-v26": "node ../../scripts/frontend_simple_v26_check.cjs",
+    "test": "ng test --watch=false",
+    "test:unit": "ng test --watch=false"
+  },
+  "dependencies": {
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/forms": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "@angular/router": "^22.2.0",
+    "@lucide/angular": "^1.43.0",
+    "rxjs": "^7.8.2",
+    "ngx-echarts": "^22.0.0",
+    "echarts": "^6.0.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.2.0",
+    "@angular/cli": "^22.2.0",
+    "@angular/compiler-cli": "^22.2.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~6.0.0",
+    "vitest": "^4.0.8",
+    "jsdom": "^26.1.0",
+    "@types/node": "^22.15.0"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  }
+}

@@ -1,0 +1,4 @@
+# CPU evaluation with no transformer download; installs the existing v9 lab.
+-r requirements-ml-lab.txt
+# Optional local embedder/reranker adapters need sentence-transformers;
+# do not download any models unless you provision the files separately.

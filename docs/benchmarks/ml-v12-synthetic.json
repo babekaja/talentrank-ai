@@ -1,0 +1,242 @@
+{
+  "research_only": true,
+  "version": "contrastive-hashed-passages-v12.0",
+  "encoder": "scikit-learn-hashing-char_wb-3_5-l2-v1",
+  "training": {
+    "training_explicit_positive_negative_triples": 13,
+    "negative_labels_from_humans_only": true,
+    "optimizer": "Adam",
+    "loss": "cosine_triplet_margin",
+    "epochs_considered": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "selected_epoch_from_calibration": 0,
+    "calibration_trials": [
+      {
+        "epoch": 0,
+        "queries": 3,
+        "mrr": 0.4444,
+        "hit_at_1": 0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0.6667
+      },
+      {
+        "epoch": 10,
+        "queries": 3,
+        "mrr": 0.4318,
+        "hit_at_1": 0.3333,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      {
+        "epoch": 20,
+        "queries": 3,
+        "mrr": 0.4145,
+        "hit_at_1": 0.3333,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      {
+        "epoch": 30,
+        "queries": 3,
+        "mrr": 0.3968,
+        "hit_at_1": 0.3333,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.3333,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      {
+        "epoch": 40,
+        "queries": 3,
+        "mrr": 0.2302,
+        "hit_at_1": 0,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.3333,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      {
+        "epoch": 50,
+        "queries": 3,
+        "mrr": 0.225,
+        "hit_at_1": 0,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.3333,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      {
+        "epoch": 60,
+        "queries": 3,
+        "mrr": 0.225,
+        "hit_at_1": 0,
+        "recall_at_3": 0.3333,
+        "recall_at_5": 0.3333,
+        "hard_negative_above_first_positive": 0.3333
+      }
+    ],
+    "seed": 12026,
+    "learning_rate": 0.025,
+    "margin": 0.2,
+    "training_loss_initial": 0.099912,
+    "training_loss_final": 0.0
+  },
+  "is_pretrained_transformer": false,
+  "no_applicant_scoring_or_automatic_hiring": true,
+  "train_queries_original": 11,
+  "calibration_queries": 3,
+  "test_queries": 3,
+  "leakage_controls": {
+    "train_queries_before_embargo": 11,
+    "embargoed_training_judgments": 6,
+    "labelled_document_overlap": {
+      "train_calibration": 0,
+      "train_test": 0,
+      "calibration_test": 0
+    },
+    "train_queries_after_embargo": 9,
+    "training_families": 4
+  },
+  "calibration_hash_baseline": {
+    "queries": 3,
+    "mrr": 0.6111,
+    "hit_at_1": 0.3333,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "hard_negative_above_first_positive": 0.3333
+  },
+  "calibration_selected_projection": {
+    "queries": 3,
+    "mrr": 0.4444,
+    "hit_at_1": 0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "hard_negative_above_first_positive": 0.6667
+  },
+  "calibration_strict_gain_over_hash_baseline": false,
+  "eligible_for_recruitment_inference": false,
+  "heldout_test": {
+    "tfidf_char": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.8333,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0
+      },
+      "by_language": {
+        "en": {
+          "queries": 2,
+          "mrr": 0.75,
+          "hit_at_1": 0.5,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        },
+        "fr": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        }
+      }
+    },
+    "bm25": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.697,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 0.6667,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      "by_language": {
+        "en": {
+          "queries": 2,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        },
+        "fr": {
+          "queries": 1,
+          "mrr": 0.0909,
+          "hit_at_1": 0,
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "hard_negative_above_first_positive": 1
+        }
+      }
+    },
+    "hash_baseline": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.8333,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "hard_negative_above_first_positive": 0
+      },
+      "by_language": {
+        "en": {
+          "queries": 2,
+          "mrr": 0.75,
+          "hit_at_1": 0.5,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        },
+        "fr": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        }
+      }
+    },
+    "contrastive_hash": {
+      "all": {
+        "queries": 3,
+        "mrr": 0.697,
+        "hit_at_1": 0.6667,
+        "recall_at_3": 0.6667,
+        "recall_at_5": 0.6667,
+        "hard_negative_above_first_positive": 0.3333
+      },
+      "by_language": {
+        "en": {
+          "queries": 2,
+          "mrr": 0.5455,
+          "hit_at_1": 0.5,
+          "recall_at_3": 0.5,
+          "recall_at_5": 0.5,
+          "hard_negative_above_first_positive": 0.5
+        },
+        "fr": {
+          "queries": 1,
+          "mrr": 1.0,
+          "hit_at_1": 1,
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "hard_negative_above_first_positive": 0
+        }
+      }
+    }
+  },
+  "dataset_sha256": "59a63e7b0c58c8c5f05c7bf732afcb845a5744039630df2b96641504b67d1700",
+  "manifest_sha256": "daa8e6df4866208b1684bb5b048a708a99b3194c1fdafdabd85d127836ca1f80",
+  "limitations": "Synthetic passages only. Character hashing is not a pretrained semantic model and may fail paraphrases or new domains. Repeated retrieval corpus across queries and tiny test set; no person-level split, performance guarantee, fairness certification or model deployment. Embedding cosine is not a probability or evidence of a skill."
+}
