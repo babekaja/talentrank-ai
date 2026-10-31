@@ -31,6 +31,8 @@ jobs:
         working-directory: services/api
         env:
           ENVIRONMENT: test
-          DATABASE_URL: sqlite://
+          DATABASE_URL: sqlite:///${{ runner.temp }}/talentrank-schema-check.sqlite3
           JWT_SECRET: 1234567890123456789012345678901234567890
-        run: python -m scripts.check_mysql_ddl_v18
+        run: |
+          python -m alembic upgrade head
+          python -m scripts.check_mysql_ddl_v18

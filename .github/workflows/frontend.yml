@@ -1,9 +1,9 @@
 name: Angular Frontend CI
 on:
   push:
-    paths: ['apps/web/**','scripts/frontend_static_check_v15.cjs','scripts/frontend_static_check_v16.cjs','.github/workflows/frontend.yml']
+    paths: ['apps/web/**','scripts/frontend_*.cjs','.github/workflows/frontend.yml']
   pull_request:
-    paths: ['apps/web/**','scripts/frontend_static_check_v15.cjs','scripts/frontend_static_check_v16.cjs','.github/workflows/frontend.yml']
+    paths: ['apps/web/**','scripts/frontend_*.cjs','.github/workflows/frontend.yml']
 jobs:
   angular-build:
     runs-on: ubuntu-latest

@@ -78,7 +78,8 @@ def test_erasure_removes_candidate_portal_data_without_fk_cascade(client_and_org
             CandidatePortalSession(candidate_id=cid,organization_id=ids['alpha'],
                 access_hash='c'*64,expires_at=utcnow()+timedelta(days=1)),
             CandidateConsentEvent(candidate_id=cid,organization_id=ids['alpha'],
-                purpose='training_suggestions',action='granted',notice_version='training-suggestions-fr-v1'),
+                purpose='training_suggestions',action='granted',notice_version='training-suggestions-fr-v1',
+                source='candidate_portal'),
         ])
         db.commit()
     class Storage:

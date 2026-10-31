@@ -62,9 +62,13 @@ for table_name, class_name in TABLE_CLASSES.items():
     table = Base.metadata.tables[table_name]
     if 'id' in table.c and table.c.id.primary_key:
         table.c.id.default = ColumnDefault(uid)
-    for name in ('created_at', 'updated_at', 'verified_at'):
+    for name in ('created_at', 'updated_at'):
         if name in table.c:
             table.c[name].default = ColumnDefault(utcnow)
+    # Optional verification timestamps stay empty until explicit verification.
+    # Required timestamps (e.g. curated skill relations) are set on insert.
+    if 'verified_at' in table.c and not table.c.verified_at.nullable:
+        table.c.verified_at.default = ColumnDefault(utcnow)
     if 'is_active' in table.c:
         table.c.is_active.default = ColumnDefault(True)
     if 'active' in table.c:
