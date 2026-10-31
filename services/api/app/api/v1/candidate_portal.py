@@ -184,7 +184,8 @@ def portal_consent(body: ConsentUpdate, session: CandidatePortalSession = Depend
                    db: Session = Depends(get_db)):
     db.add(CandidateConsentEvent(candidate_id=session.candidate_id,
         organization_id=session.organization_id, purpose=PURPOSE,
-        action='granted' if body.consent else 'withdrawn', notice_version=body.notice_version))
+        action='granted' if body.consent else 'withdrawn', notice_version=body.notice_version,
+        source='candidate_portal'))
     db.commit()
     return {'training_consent': body.consent, 'notice_version': NOTICE_VERSION}
 

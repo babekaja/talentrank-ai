@@ -33,8 +33,10 @@ def test_graph_access_crud_and_evaluation(client_and_orgs):
     client,ids=client_and_orgs
     h=auth_headers(client)
     with next(app.dependency_overrides[get_db]()) as db:
-        s1=Skill(code='TEST_GRAPH_ANG',label_fr='Angular',label_en='Angular',active=True)
-        s2=Skill(code='TEST_GRAPH_JS',label_fr='JavaScript',label_en='JavaScript',active=True)
+        s1=Skill(code='TEST_GRAPH_ANG',label_fr='Angular',label_en='Angular',
+                 taxonomy='test',version='test-v1',active=True)
+        s2=Skill(code='TEST_GRAPH_JS',label_fr='JavaScript',label_en='JavaScript',
+                 taxonomy='test',version='test-v1',active=True)
         db.add_all([s1,s2]);db.commit();a,b=s1.id,s2.id
     path='/api/v1/africa/talentgraph/relations'
     assert client.get(path).status_code==401
@@ -94,8 +96,10 @@ def test_graph_cannot_cross_tenant(client_and_orgs):
     client,ids=client_and_orgs
     alpha_h=auth_headers(client)
     with next(app.dependency_overrides[get_db]()) as db:
-        source=Skill(code='TEST_AFRICA_SOURCE',label_fr='Source',label_en='Source',active=True)
-        target=Skill(code='TEST_AFRICA_TARGET',label_fr='Cible',label_en='Target',active=True)
+        source=Skill(code='TEST_AFRICA_SOURCE',label_fr='Source',label_en='Source',
+                     taxonomy='test',version='test-v1',active=True)
+        target=Skill(code='TEST_AFRICA_TARGET',label_fr='Cible',label_en='Target',
+                     taxonomy='test',version='test-v1',active=True)
         beta_user=User(email='africa-admin@beta.example.org',full_name='Admin Beta',
                        password_hash=hash_password('another-secure-password-123'))
         db.add_all([source,target,beta_user]);db.flush()

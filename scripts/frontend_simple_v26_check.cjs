@@ -14,9 +14,13 @@ const auth=read('shared/models/auth.ts');
 const reports=read('features/insights/reports.ts');
 const error=read('shared/recruitment.ts');
 let checks=0;function check(yes,msg){assert.ok(yes,msg);checks++;}
-const main=shell.slice(shell.indexOf('Recruter au quotidien'),shell.indexOf('managementTools.update'));
+const mainStart=shell.indexOf('@if(canRecruit())');
+const mainEnd=shell.indexOf('managementTools.update',mainStart);
+check(mainStart>=0&&mainEnd>mainStart,'Primary recruiting navigation not found');
+const main=shell.slice(mainStart,mainEnd);
 check((main.match(/routerLink=/g)||[]).length<=9,'Too many first-level recruiting links');
-for(const text of ['Mon accueil','Comment commencer ?','Mes offres d\'emploi','Déposer des CV','Candidatures reçues','Résultats des CV','Mes rapports'])check(main.includes(text),'Missing plain-language navigation: '+text);
+for(const route of ['/tableau-de-bord','/offres','/campagnes','/importations','/candidatures','/matching','/rapports'])check(main.includes(`routerLink="${route}"`),'Missing primary recruiting route: '+route);
+check(shell.includes('routerLink="/demarrer"'),'Getting started guide unavailable in navigation');
 for(const text of ['managementTools()','advancedTools()','aria-controls="expert-links"','aria-controls="management-links"','isEvaluator()','isAdmin()'])check(shell.includes(text),'Missing role/expand navigation: '+text);
 check(shell.includes("this.managementTools.set(true)"),'Deep linked management page must show its category');
 check(shell.includes('Les résultats expliquent ce qui est documenté'),'Human decision notice removed');
@@ -27,8 +31,8 @@ check((guide.match(/number:[1-5]/g)||[]).length===5,'The five user-facing steps 
 check(guide.includes('vocabulary')&&guide.includes('À vérifier'),'Plain French glossary missing');
 check(dash.includes('cards.slice(0,4)')&&dash.includes('cards.slice(4)'),'Dashboard overload not reduced');
 check(dash.includes('routerLink="/demarrer"'),'Dashboard guide unavailable');
-check(match.includes('Quels CV correspondent au poste ?')&&match.includes('Paramètres réservés aux administrateurs'),'Matching still developer-oriented');
-check(match.includes("r.score===null?'À examiner'"),'Non-calculable matching score falsely shown as 0');
+check(match.includes('Quels CV correspondent au poste ?')&&match.includes('Poids des critères'),'Matching still developer-oriented');
+check(match.includes('matchingDisplay(r)')&&match.includes('result.matching_percentage!==null&&result.matching_percentage!==undefined')&&match.includes(":'Non calculable'"),'Non-calculable matching percentage falsely shown as 0');
 check(uploads.includes('Envoyer les CV')&&uploads.includes('Voir les CV reçus'),'CV upload copy not simplified');
 check(uploads.includes('/api/v1/uploads/batches'),'Upload API replaced with fake data');
 check(reports.includes('/api/v1/reports/history'),'Real reports API removed');

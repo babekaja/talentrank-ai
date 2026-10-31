@@ -17,7 +17,8 @@ for(const needle of ['/matching-runs/${encodeURIComponent(runId)}/compare','resu
   'ids.length<2||ids.length>5','new Set(ids)','filteredRows()',
   'findCriterion(r,row.code)','tr-native-chart','showEvidence(r.id,c.code)',
   '/matching-results/${encodeURIComponent(id)}/explanation','e.source_still_matches',
-  'e.start_offset','e.end_offset','role="group"','scope(r)','r.score===null'])has(comp,needle);
+  'e.start_offset','e.end_offset','role="group"','coverageDisplay(r)','r.ranking_scope_percent',
+  'r.matching_percentage!==null&&r.matching_percentage!==undefined',":'Non calculable'"])has(comp,needle);
 const detail='features/matching/matching-detail.ts';
 for(const needle of ['/matching-results/${encodeURIComponent(id)}/explanation',
   'd.stale','r.score===null', // next special case below

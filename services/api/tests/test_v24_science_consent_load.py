@@ -138,6 +138,7 @@ def test_candidate_verified_consent_and_withdrawal(client_and_orgs,monkeypatch):
     with next(app.dependency_overrides[get_db]()) as db:
         events=db.query(CandidateConsentEvent).filter(CandidateConsentEvent.candidate_id==candidate['id']).all()
         assert [event.action for event in events]==['granted','withdrawn']
+        assert all(event.source=='candidate_portal' for event in events)
     assert client.post('/api/v1/candidate-portal/logout',headers=p_headers).status_code==200
     assert client.get('/api/v1/candidate-portal/me',headers=p_headers).status_code==401
 

@@ -19,19 +19,24 @@ const chart=read('src/app/shared/ui/native-chart.ts');
 for(const s of ['NgxEchartsDirective','provideEchartsCore','SVGRenderer','BarChart','LineChart','PieChart','role="img"','aria: {enabled: true}','Number.isFinite','slice(0, 30)']) test(chart.includes(s),'missing native chart feature: '+s);
 const features=path.join(root,'src/app/features');
 function visit(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?visit(path.join(dir,e.name)):[path.join(dir,e.name)]);}
-const screens=visit(features).filter(f=>f.endsWith('.ts')&&!f.endsWith('home-redirect.ts'));
+const screens=visit(features).filter(f=>f.endsWith('.ts')&&!f.endsWith('.spec.ts')&&!f.endsWith('home-redirect.ts'));
 for(const f of screens){
   const src=fs.readFileSync(f,'utf8');
-  test(src.includes('Lucide')||src.includes('TrIcon'),`No Lucide icons: ${f}`);
+  // The minimal 404 recovery page has a text heading and a home link instead of an icon.
+  if(f===path.join(features,'system/not-found.ts')){
+    test(src.includes('<h1')&&src.includes('routerLink="/"'),`Missing page recovery navigation: ${f}`);
+  }else{
+    test(src.includes('Lucide')||src.includes('TrIcon'),`No Lucide icons: ${f}`);
+  }
   test(!src.includes('mockCandidates')&&!src.includes('fakeCandidates'),`Simulated recruiting data: ${f}`);
 }
 const dashboard=read('src/app/features/dashboard/dashboard.ts');
-for(const v of ['dashboard/overview','<tr-native-chart kind="trend"','<tr-native-chart kind="donut"','<tr-native-chart kind="bars"','documentChart()','skillChart()','campaignChart()']) test(dashboard.includes(v),'missing API-connected dashboard graph: '+v);
+for(const v of ['dashboard/overview','<tr-native-chart kind="trend"','<tr-native-chart kind="donut"','<tr-native-chart kind="bars"','documentChart()','skillChart()','trendChart()']) test(dashboard.includes(v),'missing API-connected dashboard graph: '+v);
 const reports=read('src/app/features/insights/reports.ts');
 test(reports.includes('formatChart()')&&reports.includes('/api/v1/reports/history'),'Report graph not API connected');
 const matching=read('src/app/features/matching/matching.ts');
 test(matching.includes('compareChartItems()') && matching.includes('value:r.documented'),'Candidate comparison does not use documented mentions');
-test(matching.includes("r.score===null?'À examiner'"),'Unknown score incorrectly rendered as zero');
+test(matching.includes('matchingDisplay(r)') && matching.includes('result.matching_percentage!==null&&result.matching_percentage!==undefined') && matching.includes(":'Non calculable'"),'Unknown matching percentage incorrectly rendered as zero');
 const shell=read('src/app/features/shell/shell.ts');
 test(shell.includes('advancedTools()')&&shell.includes('Outils de recherche')&&shell.includes('aria-controls="expert-links"'),'Advanced tools not collapsible');
 test(shell.includes('jugement humain'),'Human decisions disclaimer missing');

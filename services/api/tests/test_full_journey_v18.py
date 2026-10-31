@@ -2,6 +2,9 @@
 
 This does NOT replace the Docker/MySQL/Redis/MinIO integration test.
 """
+import csv
+from io import StringIO
+
 from sqlalchemy import select
 from app.main import app
 from app.core.database import get_db
@@ -70,7 +73,14 @@ def test_full_backend_recruitment_path(client_and_orgs, monkeypatch):
         assert client.post(f'/api/v1/matching-results/{item["id"]}/request-review',headers=headers).status_code==201
         exported=client.get(f'/api/v1/reports/campaigns/{cid}',headers=headers,params={'format':'csv','run_id':rid})
         assert exported.status_code==200
-        assert 'Non calculable' in exported.content.decode('utf-8-sig')
+        # The export repeats the current documentary ranking, including its
+        # limited assessed scope and the outstanding human review.
+        rows=list(csv.DictReader(StringIO(exported.content.decode('utf-8-sig')),delimiter=';'))
+        assert len(rows)==1
+        assert rows[0]['Référence dossier']==item['candidate_reference']
+        assert float(rows[0]['Correspondance pondérée (%)'])==item['matching_percentage']==100
+        assert float(rows[0]['Poids évalué (%)'])==item['ranking_scope_percent']<100
+        assert rows[0]['État']=='À vérifier'
         assert client.get('/api/v1/reports/history',headers=headers).json()['items']
         assert client.get('/api/v1/audit-logs',headers=headers).status_code==200
     finally:

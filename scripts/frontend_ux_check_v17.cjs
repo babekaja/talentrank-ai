@@ -14,7 +14,7 @@ contains('app/features/shell/shell.ts',['Aller directement au contenu','Votre or
 contains('app/features/dashboard/dashboard.ts',['/api/v1/dashboard/overview','nextStepTitle(d)','nextStepDescription(d)','tr-empty-state','tr-loading-state','aria-label','recrutement']);
 contains('app/features/candidates/candidates.ts',['/api/v1/candidates','formOpen','tr-empty-state','tr-loading-state','aria-label','Voir le dossier']);
 contains('app/features/uploads/uploads.ts',['fileChange($event)','onDrop($event)','removeSelected($index)','role="progressbar"','/api/v1/uploads/batches']);
-contains('app/features/matching/matching.ts',['Paramètres réservés aux administrateurs','<details','score','/api/v1/matching-runs','jamais une décision']);
+contains('app/features/matching/matching.ts',[`[disabled]="auth.user()?.role!=='org_admin'"`,`@if(auth.user()?.role==='org_admin')`,'<details','score','/api/v1/matching-runs','jamais une décision']);
 contains('app/features/reviews/my-reviews.ts',['candidate_reference','Votre avis sur ce dossier','/api/v1/evaluator/assignments','Vérification nécessaire']);
 contains('app/features/training/training.ts',['/api/v1/training-courses','verified_at','rel="noopener noreferrer"']);
 contains('app/shared/ui/empty-state.ts',['actionRoute','role="status"','routerLink']);
